@@ -36,11 +36,22 @@ How to use
 .. image:: /img/EditMode.png
    :alt: Editing
 
--  Alternatively, in-line editing can be provided to edit a single data
-   element at a time when it is clicked on or selected:
+Inline editing
+~~~~~~~~~~~~~~
+
+Inline editing is a feature of some controls. For example, 
+:doc:`table views </components/editing/tableview>` are controls that can be used 
+for editing purpose as well. When the user accesses an editable cell, usually 
+by clicking the cell, its behavior (and appearance) is changed from viewing mode 
+to an editing control. The input control can be applied as an unconstrained edit 
+or as constrained input, e.g. selection from a predefined set using a 
+:doc:`drop-down  </components/editing/dropdown>`. The advance of direct 
+input is a concise layout since no additional control is needed for input. The 
+drawback is reduced discoverability for table view with restricted editing 
+function, at least when only a few cells can be changed. The user does not know 
+which cell is editable and which is not. Furthermore, native access via tab or 
+access key is not available within a table which means keyboard navigation 
+needs to be implemented. 
 
 .. image:: /img/PartialEditMode.png
    :alt: Line-in editing
-
-Implementation
---------------

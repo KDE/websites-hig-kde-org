@@ -11,14 +11,12 @@ may be grouped, segmented, or arranged in many different ways, and even
 nested recursively. It provides a familiar way to convey information
 that might otherwise not be obvious or readily understood.
 
-Tables provide inline editing with the advance of a concise layout since
-no additional control is needed for input. The approach is usually less
-error-prone because a list with direct input has no dependency to other
-controls (in contrast to the combination of a list with an edit which
-needs to be enabled or disabled appropriate to the list entry the user
-clicks). The drawback is reduced discoverability for lists with
-restricted editing function, at least when only a few cells can be
-changed. User does not know which cell is editable and which is not.
+Tables can provide 
+:doc:`inline editing </patterns/content/viewingediting>` with the 
+advance of a concise layout since no additional control is needed for input. 
+The drawback is reduced discoverability for tables with restricted editing 
+function, at least when only a few cells can be changed. The user does not know 
+which cell is editable and which is not.
 
 Example
 -------
@@ -61,5 +59,6 @@ Appearance
 
 -  Avoid horizontal scrollbars. Size the table to a reasonable width.
 -  Use fixed column header.
--  Label the table with a descriptive caption to the top left (cf. :doc:`/layout/alignment`).
+-  Label the table with a descriptive caption to the top left (cf. 
+   :doc:`/layout/alignment`).
 -  Create a buddy relation so access keys are assigned.
