@@ -69,3 +69,8 @@ Plasma components
 ~~~~~~~~~~~~~~~~~
 
  - :plasmaapi:`Plasma ToolTip <ToolTip>`
+ 
+Qt Widgets
+~~~~~~~~~~
+
+ - :kwidgetsaddonsapi:`QtWidgets:  KToolTipWidget <KToolTipWidget>`

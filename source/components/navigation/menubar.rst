@@ -126,3 +126,8 @@ Kirigami
         }
         ...
     }
+
+Qt Widgets
+~~~~~~~~~~
+
+ - :kwidgetsaddonsapi:`QtWidgets:  KActionMenu <KActionMenu>`

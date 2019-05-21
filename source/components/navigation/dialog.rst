@@ -85,3 +85,27 @@ Appearance
    along technical relations.
 -  Provide a title to each section.
 -  Follow the guidelines for :doc:`alignment </layout/alignment>`.
+
+Code
+----
+
+Qt Widgets
+~~~~~~~~~~
+
+ - :kwidgetsaddonsapi:`QtWidgets:  KPageDialog <KPageDialog>`
+
+.. code-block:: c++
+    
+    UrlDialog::UrlDialog( QWidget *parent )
+    : KPageDialog( parent )
+    {
+        setFaceType( List );
+        QLabel *label = new QLabel( "Test Page" );
+        addPage( label, i18n( "My Test Page" ) );
+        label = new QLabel( "Second Test Page" );
+        KPageWidgetItem *page = new KPageWidgetItem( label, i18n( "My Second 
+        Test Page" ) );
+        page->setHeader( i18n( "My header string" ) );
+        page->setIcon( QIcon::fromTheme( "file" ) );
+        addPage( page );
+    }
