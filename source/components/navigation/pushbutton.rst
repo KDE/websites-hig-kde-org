@@ -105,3 +105,17 @@ Appearance
 -  Use :doc:`title style capitalization  </style/writing/capitalization>` 
    for the label.
 -  Use a verb or verb phrase for the title of a push button.
+
+Code
+----
+
+Kirigami and Plasma components
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+ - `QML: Button <https://doc.qt.io/qt-5/qml-qtquick-controls2-button.html>`_
+
+Qt Widgets
+~~~~~~~~~~
+
+ - `QtWidgets: QPushButton <https://doc.qt.io/qt-5/qpushbutton.html>`_
+ - :kwidgetsaddonsapi:`QtWidgets: KToggleAction <KToggleAction>`
