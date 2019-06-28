@@ -323,6 +323,7 @@ h5 {
 
     .wy-menu-vertical li.current a {
         color: #eff0f1;
+        border-right: solid 1px rgb(20,20,20);
     }
 
     .wy-menu-vertical li.toctree-l2.current li.toctree-l3 > a {
