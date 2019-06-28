@@ -51,7 +51,7 @@ an alternative to always-visible controls. If the user often performs tasks on
 single items of a list, you can add on-demand controls to the list item for 
 these.
 
-.. image:: /img/Slide_to_reveal.jpg
+.. image:: /img/Slide_to_reveal.png
    :alt:  Slide to reveal actions
    :scale: 30 %
 

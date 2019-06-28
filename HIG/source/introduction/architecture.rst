@@ -45,7 +45,7 @@ about everything to perfect your personal workflow. Use `plasma components v3
 to develop widgets for the :doc:`Plasma Mobile <pm:Introduction>` and Plasma 
 Desktop workspace.
 
-.. figure:: /img/plasma-workspace.jpg
+.. figure:: /img/plasma-workspace.png
    :scale: 25%
    :alt: Plasma desktop and mobile workspace
 
