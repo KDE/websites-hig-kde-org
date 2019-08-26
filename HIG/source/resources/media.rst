@@ -36,14 +36,16 @@ CentOS/RHEL                        ``sudo yum install ffmpeg``
 
       git clone https://anongit.kde.org/scratch/mart/qmlgrabber.git
       cd qmlgrabber
-      ... TODO ...
+      qmake PREFIX=~/.local/bin
+      make
+      make install
      
    If you install it in you home directory, make sure you have the 
    installed packages in your path by adding it to your .profile:
    
    .. code-block:: sh
 
-      echo "PATH=~/.local/lib:\$PATH" >> ~/.profile
+      echo "PATH=~/.local/bin:\$PATH" >> ~/.profile
       source ~/.profile
 
    
