@@ -184,9 +184,14 @@ function createMedia($path, $filename, $config) {
  * exit(1) on error
  */
 function cmdExec($cmd) {
+    global $debug;
+    
     exec($cmd . " 2>&1", $result, $return);
-    if ($return !== 0) {
+    if ($debug || $return !== 0) {
         print_r($result);
+    }
+    
+    if ($return !== 0) {
         exit(1);
     }
 }
