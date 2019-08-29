@@ -234,5 +234,5 @@ intersphinx_mapping = {
 
 # add css file
 def setup(app):
-    app.add_stylesheet('css/breeze.css')
+    app.add_stylesheet('https://cdn.kde.org/aether-devel/sphinx-doc.css')
     app.add_javascript('js/custom.js')
