@@ -13,7 +13,13 @@ When to Use
 How to Use
 ----------
 
--  On |desktopicon| Desktop it is recommended to place the labels to the left
+Alignment
+^^^^^^^^^
+
+|desktopicon| Desktop
+"""""""""""""""""""""
+
+-  On  Desktop it is recommended to place the labels to the left
    of the connected widgets. Labels that are to the left of their connected
    widgets should be right-aligned and end with a colon (in case of
    right-to-left languages, mirror the alignment). This makes the whole group
@@ -27,7 +33,7 @@ How to Use
 
    .. container::
 
-      .. figure:: /img/Form_Align_KDE3.qml.png
+      .. figure:: /img/Form_Align_KDE3.png
          :scale: 80%
          :figclass: dont
 
@@ -36,7 +42,7 @@ How to Use
 
    .. container::
 
-      .. figure:: /img/Form_Align_KDE5.qml.png
+      .. figure:: /img/Form_Align_KDE5.png
          :scale: 80%
          :figclass: do
 
@@ -47,7 +53,7 @@ How to Use
 
    .. container::
 
-      .. figure:: /img/Form_Align_OSX.qml.png
+      .. figure:: /img/Form_Align_OSX.png
          :scale: 80%
          :figclass: dont
 
@@ -56,7 +62,7 @@ How to Use
 
    .. container::
 
-      .. figure:: /img/Form_Align_KDE5.qml.png
+      .. figure:: /img/Form_Align_KDE5.png
          :scale: 80%
          :figclass: do
 
@@ -74,7 +80,7 @@ How to Use
 
    .. container::
 
-      .. figure:: /img/Form_Align_NO.qml.png
+      .. figure:: /img/Form_Align_NO.png
          :scale: 80%
          :figclass: dont
 
@@ -83,7 +89,7 @@ How to Use
 
    .. container::
 
-      .. figure:: /img/Form_Align_YES.qml.png
+      .. figure:: /img/Form_Align_YES.png
          :scale: 80%
          :figclass: do
 
@@ -95,17 +101,36 @@ How to Use
    translation in mind too; existing length differences will be exaggerated
    for wordy languages such as German and Brazilian Portuguese.
 
-   .. figure:: /img/Form_Align_Long.qml.png
+   .. figure:: /img/Form_Align_Long.png
       :scale: 80%
       :figclass: dont
 
       :iconred:`Don't.` |br|
       Don't use very long captions.
 
--  For |mobileicon| mobile, or if only narrow space is available, it is
+
+|mobileicon| Mobile and narrow space
+""""""""""""""""""""""""""""""""""""
+
+-  For mobile, or if only narrow space is available, it is
    recommended to place the labels above the connected widgets.
 -  When using labels on top, labels and widgets should be left-aligned.
 
-.. image:: /img/Form_Align_YES_Mobile.qml.png
+.. image:: /img/Form_Align_YES_Mobile.png
          :scale: 80%
 
+Spacing
+^^^^^^^
+
+Use :doc:`spacing </layout/metrics>` to group and seperate controls in your 
+forms.
+
+.. figure:: /img/Form3.png
+
+   Spacing used to create three groups of controls
+
+Alternative, you can use seperators for a stronger separation.
+
+.. figure:: /img/Form4.png
+
+   Using a separator to group controls
