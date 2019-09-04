@@ -2,13 +2,13 @@ Form
 ====
 
 A form layout is used to help align and structure a layout containing many
-control and input fields.
+controls and input fields.
 
 When to Use
 -----------
 
 -  Use a Form layout when there are many related controls and input fields.
--  Form layouts are ideal for :doc:`settings dialogs </patterns/content/settings>`.
+-  Form layouts are often used for :doc:`settings </plattform/settings>`.
 
 How to Use
 ----------
@@ -119,8 +119,9 @@ Alignment
 .. image:: /img/Form_Align_YES_Mobile.png
          :scale: 80%
 
-Spacing
-^^^^^^^
+
+Spacing and Grouping
+^^^^^^^^^^^^^^^^^^^^
 
 Use :doc:`spacing </layout/metrics>` to group and seperate controls in your 
 forms.
@@ -134,3 +135,15 @@ Alternative, you can use seperators for a stronger separation.
 .. figure:: /img/Form4.png
 
    Using a separator to group controls
+   
+Code
+----
+
+Kirigami
+~~~~~~~~
+
+ - :kirigamiapi:`Kirigami: FormLayout <FormLayout>`
+
+
+.. literalinclude:: /../../examples/kirigami/FormLayout.qml
+   :language: qml

@@ -1,7 +1,13 @@
 Grid
 ====
 
-.. image:: /img/Grid1.png
+Grids are, similar to tables, a structure to distribute items into rows and 
+columns. Contrary to tables grids dont have a fixed structure, but columns and 
+rows are detemend b the available space.
+
+
+
+.. image:: /img/GridWallpapers.png
    :alt:  Grid
 
 Guidelines
@@ -10,15 +16,13 @@ Guidelines
 Behavior
 ~~~~~~~~
 
-On mouseover, items are darkened or highlighted 
-(depending on the active color scheme) to 
-emphasize their overlay buttons.
+Grids adjust the number of rows and columns dynamically to distribute the items 
+to the available space. If the not enough space is available vertical scolling 
+is enabled.
 
-Overlay Buttons
-^^^^^^^^^^^^^^^
+You can apply :doc:`on demand controls </patterns/command/ondemand>` to the 
+items.
 
-Overlay buttons only appear on mouseover. Overlay buttons should
-only affect the item they are on. They should never affect other items.
 
 Appearance
 ~~~~~~~~~~
@@ -37,3 +41,8 @@ Kirigami
 
  - `QML: GridView <https://doc.qt.io/qt-5/qml-qtquick-gridview.html>`_
  - :kirigamiapi:`Kirigami: CardsGridView <CardsGridView>`
+
+Use of KCMGrid in Plasmas System Settings
+
+.. literalinclude:: /../../examples/kirigami/KCMGrid.qml
+   :language: qml

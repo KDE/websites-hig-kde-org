@@ -7,6 +7,7 @@ Platform
 
    getnew
    notification
+   settings
    tray
 
 This is an overview of how to integrate your application into the 
@@ -14,5 +15,6 @@ This is an overview of how to integrate your application into the
 
 * :doc:`getnew`
 * :doc:`notification`
+* :doc:`settings`
 * :doc:`tray`
 
