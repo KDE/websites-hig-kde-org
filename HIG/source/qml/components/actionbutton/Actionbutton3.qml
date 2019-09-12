@@ -34,8 +34,6 @@ Rectangle {
         id: addrbook
         index: 3
         Component.onCompleted: {
-            //addrbook.pageStack.push(addrbook.detailPage)
-            //addrbook.setIndex(1)
             qmlControler.start();
         }
     }
