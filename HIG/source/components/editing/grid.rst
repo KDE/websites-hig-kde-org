@@ -81,13 +81,3 @@ Kirigami
 ~~~~~~~~
 
  - `QML: GridView <https://doc.qt.io/qt-5/qml-qtquick-gridview.html>`_
-<<<<<<< HEAD
-
-=======
- - :kirigamiapi:`Kirigami: CardsGridView <CardsGridView>`
-
-Use of KCMGrid in Plasmas System Settings
-
-.. literalinclude:: /../../examples/kirigami/KCMGrid.qml
-   :language: qml
->>>>>>> 08b500e81be6232b16800276d7835674336f531a
