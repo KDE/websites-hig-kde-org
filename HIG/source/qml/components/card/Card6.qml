@@ -15,7 +15,6 @@ Rectangle {
         x: Kirigami.Units.gridUnit * 2
         y: x
         width: 320
-        //height: Layout.preferredHeight
 
         id: layout
         Kirigami.Card {
@@ -34,9 +33,6 @@ Rectangle {
             }
         }
     }
-    /*HIG.Grid {
-        z: 1
-    }*/
 
     // HACK coordinates are only final after a small delay
     Timer {

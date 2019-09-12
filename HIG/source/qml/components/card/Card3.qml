@@ -15,7 +15,6 @@ Rectangle {
         x: Kirigami.Units.gridUnit * 2
         y: x
         width: 500
-        //height: Layout.preferredHeight
 
         id: layout
         Kirigami.Card {

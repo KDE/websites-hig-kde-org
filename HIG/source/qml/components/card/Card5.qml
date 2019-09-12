@@ -16,7 +16,6 @@ Rectangle {
         y: x
         width: 800
         columns: 3
-        //height: Layout.preferredHeight
 
         id: layout
         Kirigami.Card {
@@ -77,9 +76,6 @@ Rectangle {
             }
         }
     }
-    /*HIG.Grid {
-        z: 1
-    }*/
 
     // HACK coordinates are only final after a small delay
     Timer {
