@@ -5,10 +5,11 @@ Grids are, similar to tables, a structure to distribute items into rows and
 columns. Contrary to tables grids don't have a fixed structure, but columns and 
 rows are determent by the available space.
 
-
-
-.. image:: /img/GridWallpapers.png
-   :alt:  Grid
+.. figure:: /img/Wallpaper-dark.png
+   :alt: Choose a new Plasma Design
+   :scale: 40%
+   
+   Choose a new wallpaper
 
 Guidelines
 ----------
@@ -25,6 +26,12 @@ Behavior
 Grids adjust the number of rows and columns dynamically to distribute the items 
 to the available space. If the not enough space is available vertical scolling 
 is enabled.
+
+.. raw:: html
+
+   <video autoplay controls 
+   src="https://cdn.kde.org/hig/video/20180620-1/CardLayout2.webm" loop="true" 
+   playsinline="true" width="536" onended="this.play()" class="border"></video>
 
 -  Don't have blank grid items; use meta-options, e.g. (None) instead.
 -  Place options that represent general options (e.g. All, None) at the

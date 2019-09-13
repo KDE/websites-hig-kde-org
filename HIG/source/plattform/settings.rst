@@ -13,6 +13,9 @@ dialog.
 Example
 -------
 
+.. figure:: /img/Settings-dark.png
+   :alt: Buttons on the bottom of the settings
+   :scale: 60%
 
 Guidelines
 ----------
@@ -107,10 +110,9 @@ KDE software.**
 Forms
 """""
 
-.. figure:: /img/SettingsForm.png
+.. figure:: /img/Settings-Notification-dark.png
    :alt: Notifications settings in a form layout
    :scale: 40%
-   :figclass: border
    
    Notifications settings in a form layout
    
@@ -130,12 +132,11 @@ controls and input fields.
 Grid
 """"
 
-.. figure:: /img/SettingsGrid.png
+.. figure:: /img/Wallpaper-dark.png
    :alt: Choose a new Plasma Design
    :scale: 40%
-   :figclass: border
    
-   Choose a new Plasma Design
+   Choose a new wallpaper
 
 Use a :doc:`grid </components/editing/grid>` for a visual selection of a 
 single option. To implement grids in KCM Modules use the 
