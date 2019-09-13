@@ -1,7 +1,7 @@
 Form
 ====
 
-A form layout is used to help align and structure a layout containing many
+A form layout is used to help align and structure a layout that contains many
 controls and input fields.
 
 When to Use
@@ -13,17 +13,20 @@ When to Use
 How to Use
 ----------
 
+-  Use Qt's QFormLayout or Kirigami.FormLayout wherever possible.
+-  Do not synthesize your own FormLayout-style layout using a grid.
+
 .. attention::
-   |devicon| If you are not using QFormLayoutor or Kirigami.FormLayout there 
-   are several very important things to take into account for 
-   :doc:`accessibility </accessibility/index>` reasons.
+   |devicon| If for some reason you must create your own FormLayout style layout
+   without using one of the aforementioned controls, there are several very
+   important things to take into account for 
+   :doc:`accessibility </accessibility/index>` reasons""
    
    - Form labels need to be connected with input fields.
    - Headlines for groupings need to be connected.
    - Make sure to test keyboard navigation with the form.
    - Ctrl + Tab should switch between logical groups of controls.
-   - Make sure to set the focus to focused controls and don't just highlight 
-     it.
+   - Make sure to set the focus to focused controls; don't just highlight them.
 
 
 Alignment
@@ -113,10 +116,10 @@ Alignment
          :noblefir:`Do.` |br|
          Align controls to the left.
 
--  Keep track of label sizes; avoid big differences in text length that could
-   result in too much whitespace for multiple aligned controls. Keep
-   translation in mind too; existing length differences will be exaggerated
-   for wordy languages such as German and Brazilian Portuguese.
+-  Keep track of label sizes; avoid large differences in text length that could
+   result in too much whitespace. Keep translation in mind too; existing length
+   differences will be exaggerated for wordy languages such as German and
+   Brazilian Portuguese.
 
    .. figure:: /img/Form_Align_Long.png
       :scale: 80%
@@ -129,8 +132,8 @@ Alignment
 |mobileicon| Mobile and narrow space
 """"""""""""""""""""""""""""""""""""
 
--  For mobile, or if only narrow space is available, it is
-   recommended to place the labels above the connected widgets.
+-  For mobile, or if only a very small amount of horizontal space is available,
+   it is recommended to place the labels above the connected widgets.
 -  When using labels on top, labels and widgets should be left-aligned.
 
 .. image:: /img/Form_Align_YES_Mobile.png
@@ -140,14 +143,14 @@ Alignment
 Spacing and Grouping
 ^^^^^^^^^^^^^^^^^^^^
 
-Use :doc:`spacing </layout/metrics>` to group and seperate controls in your 
+Use :doc:`spacing </layout/metrics>` to group and separate controls in your 
 forms.
 
 .. figure:: /img/Form3.png
 
    Spacing used to create three groups of controls
 
-Alternative, you can use separators for a stronger separation.
+Alternatively, you can use separators for a stronger separation.
 
 .. figure:: /img/Form4.png
 

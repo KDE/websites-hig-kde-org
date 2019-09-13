@@ -1,14 +1,14 @@
 Settings
 ========
 
-A settings provide the ability to customize how an application, a Plasma widget 
-or the Plasma Workspace looks or should behave. It is intended for settings that 
-are persistent but not changed very frequently. 
+Settings provide the ability to customize the appearance and behavior of an
+application, a Plasma widget, or the Plasma Workspace. Dedicated settings views
+are intended for settings that are persistent but not changed very frequently. 
 
 
-Settings for the Plasma Workspace are often referred to as KCM KConfig Modules. 
-They can either appear in Plasmas System Setting or as standalone configuration 
-dialog.
+A settings page for the Plasma Desktop is referred to as a KCM (KDE Config 
+Module). KCMs can either appear in Plasma's System Settings app, or as
+standalone configuration dialogs.
 
 Example
 -------
@@ -23,12 +23,13 @@ Guidelines
 When to Use
 ~~~~~~~~~~~
 
--  Use the settings page to display settings that are persistent but not
-   accessed or changed very frequently. The toolbar or the main menu (and optionally context menus) are more appropriate places for settings that
-   are frequently accessed and changed, such as icon view style or sort order.
--  Don't use settings pages to change the properties of a selected item.
+-  Use a settings page to display settings that are persistent but infrequently
+   accessed or changed. Settings that are frequently accessed and changed (e.g.
+   an icon view style or list's sort order) should be located close to the
+   views or tools that they affect, such as in the window's toolbar.
+-  Don't use a settings page to change the properties of a selected item.
    Instead, use a properties dialog or a contextual editing panel.
--  Don't use the settings page for potentially dangerous developer settings
+-  Don't use a settings page for potentially dangerous developer settings
    like the name of an SQL table. Instead, use configuration files or separate
    dialogs.
 
@@ -38,22 +39,21 @@ How to Use
 -  **Simple by default**: Define smart and polite defaults so that your target
    :doc:`personas </introduction/personas>` don't have to alter them at all.
 -  **Powerful when needed**: Provide enough settings for the perfect
-   customization according individual needs and preferences. But even
-   though customizability is very important for KDE software, try to
-   keep your settings page as small and simple as possible. Remember:
-   every option requires more code and more testing, and makes the settings
-   page slower to use.
--  Respect the privacy of the users: Always use opt-in, never an opt-out
-   model for features that transmit potentially private data (e.g. usage
-   statistics). See KDE's 
+   customization according to individual needs and preferences. But even
+   though customizability is very important for KDE software, try to keep your
+   settings page as small and simple as possible. Remember: every option
+   requires more code and more testing, and makes the settings page slower to
+   use.
+-  Respect the privacy of the users: Always use opt-in, never an opt-out model
+   for features that transmit potentially private data (e.g. usage statistics).
+   See KDE's 
    `Telemetry Policy <https://community.kde.org/Policies/Telemetry_Policy>`_
    for details.
 -  Following KDE's "Simple by default, powerful when needed" 
-   :doc:`design mantra </index>`, settings can be split into common and 
-   advanced groups. Advanced settings are not important to most users but 
-   essential for some, and therefore cannot be removed. Those settings are 
-   hidden by default to reduce the mental overhead of using the settings page, 
-   but with easy access.
+   :doc:`design mantra </index>`, settings can be split into common and advanced
+   groups. Advanced settings are not important to most users but essential for
+   some. There therefore cannot be removed, but they can be de-emphasized in
+   visual weight.
 
 
 Behavior
@@ -72,7 +72,7 @@ Behavior
    user why they're disabled.
    **Exception:** it is acceptable to hide settings for non-existent hardware.
    For example, it's okay to hide the touchpad configuration when no touchpad
-   is present.
+   is present, or hide multi-screen controls when only one screen is connected.
 -  Consider adding access to third-party add-ons via 
    :doc:`Get New Stuff! <getnew>`.
 -  Ctrl + Tab should switch between logical groups of controls.
@@ -86,9 +86,10 @@ Appearance
 ~~~~~~~~~~
 
 -  For a desktop app, put your settings page inside a dialog window.
--  Place buttons at the bottom of the settings. The *Apply* to the right, an 
-   optional :doc:`Get New Stuff! <getnew>` button to the right above the Apply 
-   button.
+-  Place Help, Defaults, Reset, OK, Apply, and Cancel buttons on the bottom of
+   the dialog window.
+-  If there is a :doc:`Get New Stuff! <getnew>` button, place it above the
+   bottom row of buttons.
    
    .. figure:: /img/SettingsButtons.png
       :alt: Buttons on the bottom of the settings
@@ -97,15 +98,16 @@ Appearance
       
    The *Help*, *Defaults*, *Reset* buttons on the left side.
 
--  You should avoid vertical and especially horizontal scrollbars. 
-   Separate your controls into more groups and make use of 
-   :doc:`tabbed views </components/navigation/tab>`. 
-   This does not apply to scrollbars within inline tables, lists and grid 
-   views.
+-  Avoid vertical and especially horizontal scrollbars. The dialog should be
+   large enough to fit its contents without scrolling being necessary. As more
+   controls are added, err on the side of adding additional pages or
+   :doc:`tabbed views </components/navigation/tab>`. rather than making the
+   dialog window larger. This does not apply to scrollbars within inline tables,
+   lists and grid views.
 -  On mobile, use a full-screen view for your settings page.
 
-**There are several well established layouts for settings that are used threw 
-KDE software.**
+**There are several well established layouts for settings that are used
+throughout KDE software:**
 
 Forms
 """""
@@ -116,18 +118,18 @@ Forms
    
    Notifications settings in a form layout
    
-Use a :doc:`form </patterns/content/form>` if your setting consist of may 
-controls and input fields.
+Use a :doc:`form </patterns/content/form>` if your settings have many controls
+and input fields.
 
 -  Lay out your settings page according to the
    :doc:`alignment </layout/alignment>` guidelines.
 -  Organize your settings into logical groups, with more important groups
-   appearing higher up on the page. Separate the groups with white space or
+   appearing higher up on the page. Separate the groups with whitespace or
    put them into different tabs of a
    :doc:`tabbed view </components/navigation/tab>` (if appropriate).
 -  Separate common and advanced settings into different groups. If necessary,
-   hide the advanced settings behind a collapsible group box. Make the
-   standard settings comprehensible and easy to use.
+   hide the advanced settings behind a collapsible group box or on another 
+   page or tab. Make the common settings comprehensible and easy to use.
 
 Grid
 """"
@@ -138,8 +140,8 @@ Grid
    
    Choose a new wallpaper
 
-Use a :doc:`grid </components/editing/grid>` for a visual selection of a 
-single option. To implement grids in KCM Modules use the 
+Use a :doc:`grid </components/editing/grid>` for a selection of a single item 
+when all items are visually distinctive. To implement a grid in a KCM, use the
 :doc:`KCMGrid <kcmgrid>`.
 
 Lists
@@ -152,7 +154,7 @@ Lists
    Language settings
 
 Use a :doc:`picker </patterns/content/picker>` for selection and configuration 
-of list based settings
+of list based settings where the items are not visually distinctive.
 
 
 .. Mockup
