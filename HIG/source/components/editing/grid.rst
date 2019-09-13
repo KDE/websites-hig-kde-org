@@ -2,8 +2,8 @@ Grid
 ====
 
 Grids are, similar to tables, a structure to distribute items into rows and 
-columns. Contrary to tables grids dont have a fixed structure, but columns and 
-rows are detemend b the available space.
+columns. Contrary to tables grids don't have a fixed structure, but columns and 
+rows are determent by the available space.
 
 
 
@@ -16,7 +16,7 @@ Guidelines
 Is this the right control?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Grids are similar to :doc:`lists <list>` used to display a sortet or unsortet 
+Grids are similar to :doc:`lists <list>` used to display a sorted or unsorted 
 number of items. All items should be of the same kind.
 
 Behavior
@@ -31,6 +31,10 @@ is enabled.
    beginning of the grid.
 -  Sort grid items in a logical order. Make sure sorting fits
    translation.
+
+.. attention::
+   |devicon| For :doc:`accessibility </accessibility/index>` make sure to test 
+   keyboard navigation with the grid.
 
 On-Demand Actions
 ^^^^^^^^^^^^^^^^^

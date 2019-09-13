@@ -13,6 +13,19 @@ When to Use
 How to Use
 ----------
 
+.. attention::
+   |devicon| If you are not using QFormLayoutor or Kirigami.FormLayout there 
+   are several very important things to take into account for 
+   :doc:`accessibility </accessibility/index>` reasons.
+   
+   - Form labels need to be connected with input fields.
+   - Headlines for groupings need to be connected.
+   - Make sure to test keyboard navigation with the form.
+   - Ctrl + Tab should switch between logical groups of controls.
+   - Make sure to set the focus to focused controls and don't just highlight 
+     it.
+
+
 Alignment
 ^^^^^^^^^
 
@@ -23,7 +36,11 @@ Alignment
    of the connected widgets. Labels that are to the left of their connected
    widgets should be right-aligned and end with a colon (in case of
    right-to-left languages, mirror the alignment). This makes the whole group
-   of form widgets appear to be center-aligned. In Qt 5, using a QFormLayout handles all of this for you automatically.
+   of form widgets appear to be center-aligned. In Qt 5, using a QFormLayout 
+   handles all of this for you automatically.
+
+
+
 -  See the pages on
    :doc:`radio buttons </components/editing/radiobutton>` and 
    :doc:`checkboxes </components/editing/checkbox>` for detailed information
@@ -130,7 +147,7 @@ forms.
 
    Spacing used to create three groups of controls
 
-Alternative, you can use seperators for a stronger separation.
+Alternative, you can use separators for a stronger separation.
 
 .. figure:: /img/Form4.png
 

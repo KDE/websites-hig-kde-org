@@ -6,7 +6,7 @@ or the Plasma Workspace looks or should behave. It is intended for settings that
 are persistent but not changed very frequently. 
 
 
-Settings for the Plasma Workspace are often refered to as KCM KConfig Modules. 
+Settings for the Plasma Workspace are often referred to as KCM KConfig Modules. 
 They can either appear in Plasmas System Setting or as standalone configuration 
 dialog.
 
@@ -72,7 +72,13 @@ Behavior
    is present.
 -  Consider adding access to third-party add-ons via 
    :doc:`Get New Stuff! <getnew>`.
+-  Ctrl + Tab should switch between logical groups of controls.
 
+.. attention::
+   |devicon| For :doc:`accessiblity </accessibility/index>` make sure to test 
+   keyboard navigation with the settings. Make sure to set the focus to focused 
+   controls and don't just highlight it.
+   
 Appearance
 ~~~~~~~~~~
 
@@ -84,7 +90,7 @@ Appearance
    .. figure:: /img/SettingsButtons.png
       :alt: Buttons on the bottom of the settings
       :scale: 60%
-      :class: border
+      :figclass: border
       
    The *Help*, *Defaults*, *Reset* buttons on the left side.
 
@@ -95,7 +101,7 @@ Appearance
    views.
 -  On mobile, use a full-screen view for your settings page.
 
-** There are several well established layouts for settings that are used threw 
+**There are several well established layouts for settings that are used threw 
 KDE software.**
 
 Forms
@@ -103,7 +109,8 @@ Forms
 
 .. figure:: /img/SettingsForm.png
    :alt: Notifications settings in a form layout
-   :scale: 60%
+   :scale: 40%
+   :figclass: border
    
    Notifications settings in a form layout
    
@@ -113,7 +120,7 @@ controls and input fields.
 -  Lay out your settings page according to the
    :doc:`alignment </layout/alignment>` guidelines.
 -  Organize your settings into logical groups, with more important groups
-   appearing higher up on the page. Separate the groups with whitespace or
+   appearing higher up on the page. Separate the groups with white space or
    put them into different tabs of a
    :doc:`tabbed view </components/navigation/tab>` (if appropriate).
 -  Separate common and advanced settings into different groups. If necessary,
@@ -125,15 +132,17 @@ Grid
 
 .. figure:: /img/SettingsGrid.png
    :alt: Choose a new Plasma Design
-   :scale: 60%
+   :scale: 40%
+   :figclass: border
    
    Choose a new Plasma Design
 
 Use a :doc:`grid </components/editing/grid>` for a visual selection of a 
-single option.
+single option. To implement grids in KCM Modules use the 
+:doc:`KCMGrid <kcmgrid>`.
 
-Picker
-""""""
+Lists
+"""""
 
 .. figure:: /img/LanguagePicker.png
    :alt: Language settings
