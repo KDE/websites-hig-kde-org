@@ -173,6 +173,10 @@ from epilog import rst_epilog
 
 # Adding global substitutions
 rst_epilog += """
+.. |accessicon| image:: /img/kaccess.svg
+             :width: 32px
+             :height: 32px
+
 .. |devicon| image:: /img/DevIcon.svg
              :width: 32px
              :height: 32px

@@ -42,7 +42,8 @@ Size
      turn requires a huge minimal size.
    - Keep in mind that the available screen area typically also will be
      shrunk by panels and the window titlebar. Also, the user's font might
-     be bigger than yours (e.g. for accessibility reason).
+     be bigger than yours (e.g. for :doc:`accessibility </accessibility/index>` 
+     reason).
    - You therefore should ideally preserve ~10% to catch those
      variables and try to not exceed 920x690px.
 

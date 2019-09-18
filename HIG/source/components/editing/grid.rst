@@ -39,8 +39,8 @@ scrollable. Grids can be vertically scrollable though.
 -  Sort grid items in a logical order. Make sure sorting fits translation.
 
 .. attention::
-   |devicon| For :doc:`accessibility </accessibility/index>` make sure to test
-   keyboard navigation with the grid.
+   |accessicon| For :doc:`accessibility </accessibility/index>` make sure to 
+   test keyboard navigation with the grid.
 
 On-Demand Actions
 ^^^^^^^^^^^^^^^^^

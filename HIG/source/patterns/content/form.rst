@@ -17,9 +17,9 @@ How to Use
 -  Do not synthesize your own FormLayout-style layout using a grid.
 
 .. attention::
-   |devicon| If for some reason you must create your own FormLayout style layout
-   without using one of the aforementioned controls, there are several very
-   important things to take into account for 
+   |accessicon| If for some reason you must create your own FormLayout style 
+   layout without using one of the aforementioned controls, there are 
+   several very important things to take into account for 
    :doc:`accessibility </accessibility/index>` reasons""
    
    - Form labels need to be connected with input fields.

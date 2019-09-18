@@ -44,8 +44,8 @@ Behavior
    translation.
 
 .. attention::
-   |devicon| For :doc:`accessibility </accessibility/index>`, make sure to test 
-   keyboard navigation with the list.
+   |accessicon| For :doc:`accessibility </accessibility/index>`, make sure to 
+   test keyboard navigation with the list.
 
 On-Demand Actions
 ^^^^^^^^^^^^^^^^^
