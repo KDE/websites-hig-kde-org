@@ -1,15 +1,16 @@
 {
     "Actionbutton1.qml": {
         "type": "png",
-        "controls": "mobile"
+        "controls": "mobile",
+        "delay": 1
     },
     "Actionbutton2.qml": {
         "type": "png",
         "controls": "mobile",
-        "autostart": 0
+        "delay": 1
     },
     "Actionbutton3.qml": {
         "type": "png",
-        "autostart": 0
+        "delay": 1
     }
 }

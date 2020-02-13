@@ -78,19 +78,13 @@ Rectangle {
     }
 
     // HACK coordinates are only final after a small delay
-    Timer {
-        interval: 1000
-        repeat: false
-        running: true
-        onTriggered: {
-            var a = new A.An(root);
-            //a.tree();
-            a.find("bannerimage").draw({
-                "outline": {
-                    "aspectratio": true
-                }
-            });
-            qmlControler.start();
-        }
+    Component.onCompleted: {
+        var a = new A.An(root);
+        //a.tree();
+        a.find("bannerimage").draw({
+            "outline": {
+                "aspectratio": true
+            }
+        });
     }
 }

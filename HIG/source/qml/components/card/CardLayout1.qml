@@ -66,11 +66,6 @@ Rectangle {
             id: anim
             PropertyAnimation { to: 400; duration: 3000 }
             PropertyAnimation { to: 600; duration: 3000  }
-            running: false;
-        }
-        Component.onCompleted: function() {
-            anim.start();
-            qmlControler.start();
         }
     }
 }

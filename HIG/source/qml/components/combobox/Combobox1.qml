@@ -20,9 +20,10 @@
 import QtQuick 2.6
 import QtQuick.Controls 2.2
 import org.kde.kirigami 2.4 as Kirigami
+import "../../lib/" as HIG
 
 Rectangle {
-    width: 320
+    width: 580
     height: 180
 
     Row {
@@ -43,12 +44,7 @@ Rectangle {
     }
 
     // HACK __popup is internal and might change in future versions
-    Timer {
-        interval: 1000
-        repeat: false
-        running: true
-        onTriggered: {
-            cbx.popup.open()
-        }
+    Component.onCompleted: {
+        cbx.popup.open()
     }
 }

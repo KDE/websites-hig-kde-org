@@ -34,21 +34,14 @@ Rectangle {
         }
     }
 
-    // HACK coordinates are only final after a small delay
-    Timer {
-        interval: 1000
-        repeat: false
-        running: true
-        onTriggered: {
-            var a = new A.An(root);
-            //a.tree();
-            a.find("qquickgridlayout").children("qquickitem").draw({
-                "outline": {"label": false}
-            });
-            a.find("card").draw({
-                "padding": {}
-            });
-            qmlControler.start();
-        }
+    Component.onCompleted: {
+        var a = new A.An(root);
+        //a.tree();
+        a.find("qquickgridlayout").children("qquickitem").draw({
+            "outline": {"label": false}
+        });
+        a.find("card").draw({
+            "padding": {}
+        });
     }
 }

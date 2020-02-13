@@ -5,6 +5,7 @@ import org.kde.kirigami 2.4 as Kirigami
 
 import "../../lib" as HIG
 import "../../lib/annotate.js" as A
+import "../../lib/" as HIG
 
 Rectangle {
     id: root
@@ -46,24 +47,23 @@ Rectangle {
         z: 1
     }
 
-    // HACK coordinates are only final after a small delay
-    Timer {
-        interval: 1000
-        repeat: false
+   // HACK coordinates are only final after a small delay
+   HIG.FTimer {
         running: true
-        onTriggered: {
-            var a = new A.An(root);
-            a.find("privateactiontoolbutton").draw({
-                "outline": {},
-            }).first().draw({
-                "ruler": {},
-            });
-            a.find("bannerimage").draw({
-                "outline": {
-                   "aspectratio": true
-                }
-            });
-            qmlControler.start();
+        onTick: function(frameCounter) {
+            if (frameCounter == 1) {
+                var a = new A.An(root);
+                a.find("privateactiontoolbutton").draw({
+                    "outline": {},
+                }).first().draw({
+                    "ruler": {},
+                });
+                a.find("bannerimage").draw({
+                    "outline": {
+                    "aspectratio": true
+                    }
+                });
+            }
         }
     }
 }

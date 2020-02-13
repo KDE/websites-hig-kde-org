@@ -23,6 +23,7 @@ import QtQuick.Layouts 1.2
 import org.kde.kirigami 2.4 as Kirigami
 import "../../models/" as Models
 import "../../addr/" as Addr
+import "../../lib/" as HIG
 import "../../lib/annotate.js" as A
 
 Rectangle {
@@ -35,16 +36,6 @@ Rectangle {
         index: 3
         Component.onCompleted: {
             addrbook.pageStack.push(addrbook.detailPage)
-        }
-    }
-
-    // HACK
-    Timer {
-        interval: 1000
-        repeat: false
-        running: true
-        onTriggered: {
-            qmlControler.start();
         }
     }
 }
