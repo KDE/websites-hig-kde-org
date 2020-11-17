@@ -10,7 +10,6 @@ Introduction
    devicetypes
    responsive
    concept
-   personas
    research
 
 * :doc:`architecture`
@@ -18,6 +17,5 @@ Introduction
 * :doc:`devicetypes`
 * :doc:`responsive`
 * :doc:`concept`
-* :doc:`personas`
 * :doc:`research`
 

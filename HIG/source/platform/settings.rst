@@ -36,8 +36,8 @@ When to Use
 How to Use
 ~~~~~~~~~~
 
--  **Simple by default**: Define smart and polite defaults so that your target
-   :doc:`personas </introduction/personas>` don't have to alter them at all.
+-  **Simple by default**: Define smart and polite defaults so that your 
+   targeted users don't have to alter them at all.
 -  **Powerful when needed**: Provide enough settings for the perfect
    customization according to individual needs and preferences. But even
    though customizability is very important for KDE software, try to keep your
