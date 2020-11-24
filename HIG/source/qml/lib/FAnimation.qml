@@ -20,36 +20,17 @@
 import QtQuick 2.2
 
 Item {
-    width: 1
-    height: 1
-    visible: false
-    signal tick(int frameCounter)
+    property variant actions: {}    
     
-    property int frameCounter: 0
-    property bool running : false
-    
-    NumberAnimation on rotation {
-        from:0
-        to: 360
-        duration: 800
-        loops: Animation.Infinite
-    }
-    // 1 tick per frame, 
-    // Since we are recording with exact 60 frames/sec
-    // 60 ticks are 1 sec
-    onRotationChanged: function() {
-        if (running) {
-            frameCounter++;
-            tick(frameCounter);
+    FTimer {
+        running: true
+        // 1 tick per frame, 
+        // Since we are recording with exact 60 frames/sec
+        // 60 ticks are 1 sec
+        onTick: function(tick) {
+            if (actions[tick]) {
+                actions[tick]();
+            }
         }
-    }
-    
-    function start() {
-        frameCounter = 0;
-        running = true;
-    }
-    
-    function stop() {
-        running = false;
     }
 }

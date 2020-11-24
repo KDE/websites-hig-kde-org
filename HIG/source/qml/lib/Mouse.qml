@@ -48,6 +48,7 @@ Item {
 
             onStopped: {
                 ind.visible = false;
+                cursor.visible = false;
                 event.mouseClick(canvas.parent, px, py, Qt.LeftButton, Qt.NoModifier, 0)
             }
         }
