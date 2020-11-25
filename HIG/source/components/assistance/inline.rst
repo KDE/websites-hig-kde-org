@@ -141,9 +141,11 @@ close button and :doc:`buttons <../navigation/pushbutton>`.
 If there is not enough space to display all the buttons, an overflow menu is 
 shown instead.
 
-.. figure:: /img/Message3.png
-   :alt: Inline message with overflow menu.
-   :scale: 80%
+.. raw:: html
+
+   <video autoplay controls 
+   src="https://cdn.kde.org/hig/video/20201125/Message3.webm" loop="true" 
+   playsinline="true" width="420" onended="this.play()" class="border"></video>
    
    Inline message with overflow menu.
 
