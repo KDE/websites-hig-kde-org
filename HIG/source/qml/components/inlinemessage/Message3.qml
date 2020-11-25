@@ -67,19 +67,19 @@ Rectangle {
     
     HIG.FAnimation {
         actions: {
-            60: function() {
+            120: function() {
                 msg.state = "small"
             },
             // open popup
-            180: function() {
+            240: function() {
                 var a = new A.An(msg);
                 a.find("privateactiontoolbutton").eq(2).click();
             },
             // Close popup
-            360: function() {
+            420: function() {
                 event.mouseClick(root.parent, 1, 1, Qt.LeftButton, Qt.NoModifier, 0)
             },
-            420: function() {
+            480: function() {
                 msg.state = "";
             }
         }

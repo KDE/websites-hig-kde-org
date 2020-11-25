@@ -10,7 +10,8 @@
     },
     "Message3.qml": {
         "type": "webm",
-        "duration": 10
+        "duration": 11,
+        "delay": 1
     },
     "Message5.qml": {
         "type": "png",
