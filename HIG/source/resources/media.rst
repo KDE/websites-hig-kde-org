@@ -34,7 +34,7 @@ CentOS/RHEL                        ``sudo yum install ffmpeg``
 
    .. code-block:: sh
 
-      git clone https://anongit.kde.org/scratch/mart/qmlgrabber.git
+      git clone https://invent.kde.org/mart/qmlgrabber.git/
       cd qmlgrabber
       qmake PREFIX=~/.local/bin
       make
