@@ -51,14 +51,17 @@ Rectangle {
                 var a = new A.An(root);
                 var label = a.find("label");
                 var toolbar = a.find("toolbarlayout");
-                toolbar.draw({
+                var bannerimage = a.find("bannerimage");
+                bannerimage.draw({
                     "outline": {label: false},
+                    "brace": {to: label, horizontal: false, center: false, text: 16}
                 });
                 label.draw({
                     "outline": {label: false},
+                    "brace": {to: toolbar, horizontal: false, center: false}
                 });
-                a.find("card").draw({
-                    "padding": {}
+                toolbar.draw({
+                    "outline": {label: false},
                 });
             }
         }
