@@ -1,5 +1,6 @@
 ...
 import org.kde.kirigami 2.9 as Kirigami
+import QtQuick.Controls 2.5
 ...
 
 Kirigami.ApplicationWindow {
