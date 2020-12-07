@@ -19,11 +19,11 @@ first paragraph looks like this in reStructuredText
 The restructuredText of the full HIG is organized into several source files. 
 You can view and modify these source files with any text editor.
 
-The source files are hosted in a 
-`Git repo <https://cgit.kde.org/websites/hig-kde-org.git/>`_. 
-`Sphinx <http://www.sphinx-doc.org>`_ is used to generate HTML pages from these 
-source files. Tasks and changes are organized via 
-`https://invent.kde.org <https://invent.kde.org/websites/hig-kde-org>`_.
+The source files are hosted in a
+`Git repo <https://invent.kde.org/documentation/hig-kde-org.git>`_.
+`Sphinx <http://www.sphinx-doc.org>`_ is used to generate HTML pages from these
+source files. Tasks and changes are organized via
+`https://invent.kde.org <https://invent.kde.org/documentation/hig-kde-org>`_.
 
 .. note:: On every page of the HIG, there is a *View page source* link in the top right corner.
 
