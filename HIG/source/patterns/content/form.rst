@@ -71,26 +71,6 @@ Alignment
          :noblefir:`Do.` |br|
          Use Plasma 5-style form alignment.
 
-.. container:: flex
-
-   .. container::
-
-      .. figure:: /img/Form_Align_OSX.png
-         :scale: 80%
-         :figclass: dont
-
-         :iconred:`Don't.` |br| 
-         Don't use macOS-style form alignment.
-
-   .. container::
-
-      .. figure:: /img/Form_Align_KDE5.png
-         :scale: 80%
-         :figclass: do
-
-         :noblefir:`Do.` |br|
-         Use Plasma 5-style form alignment.
-
 -  Position groups of items vertically rather than horizontally, as this
    makes them easier to scan visually. Use horizontal or rectangular
    positioning only if it would greatly improve the layout of the window.
