@@ -34,17 +34,12 @@ Rectangle {
         id: addrbook
     }
 
-
-    HIG.FAnimation {
-        actions: {
-            
-            120: function() {
+    HIG.FTimer {
+        running: true
+        onTick: function(frameCounter) {
+            if (frameCounter == 120) {
                 var a = new A.An(addrbook);
-                a.find("swipelistitem").eq(3).swipe({fromX: +140, fromY: 9, toX: -80, toY: 0});
-            },
-            240: function() {
-                var a = new A.An(addrbook);
-                a.find("swipelistitem").eq(3).touch({});
+                a.find("swipelistitem").eq(3).hover({fromX: +140, fromY: 9, toX: -80, toY: 0});
             }
         }
     }
