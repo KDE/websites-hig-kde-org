@@ -1,10 +1,12 @@
 Drop-Down
 =========
 
-.. figure:: /img/Dropdown1.png
-   :alt:  Dropdown
-   :figclass: border
-   
+.. raw:: html
+
+   <video autoplay controls 
+   src="https://cdn.kde.org/hig/video/20201211/Dropdown1.webm" loop="true" 
+   playsinline="true" width="320" onended="this.play()" class="border"></video>
+   <br/>
    Control which allows the user to choose one value from a list.
 
 
