@@ -84,7 +84,7 @@ Kirigami
 ~~~~~~~~
 
  - :kirigamiapi:`Kirigami: ApplicationWindow <ApplicationWindow>`
- - `QML: MenuBar <https://doc.qt.io/qt-5/qml-qtquick-controls-menubar.html>`_
+ - `QML: MenuBar <https://doc.qt.io/qt-5/qml-qtquick-controls2-menubar.html>`_
 
  .. literalinclude:: /../../examples/kirigami/AddressbookMenubar.qml
    :language: qml

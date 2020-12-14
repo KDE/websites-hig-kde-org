@@ -51,10 +51,10 @@ Plasma
 ------
 Plasma is built out of widgets (also called Plasmoids), allowing you to move,
 mix, add, and remove just
-about everything to perfect your personal workflow.` Those are built
+about everything to perfect your personal workflow. `Those are built
 using Plasma Components 3
-<https://api.kde.org/frameworks/plasma-framework/html/plasmacomponents
-.html>`_, which are based on Qt Quick Controls 2.
+<https://api.kde.org/frameworks/plasma-framework/html/plasmacomponents.html>`_ ,
+which are based on Qt Quick Controls 2.
 
 .. figure:: /img/plasma-workspace.jpg
    :scale: 25%
@@ -66,14 +66,14 @@ using Plasma Components 3
 Common Components
 -----------------
 
-The KDE HIG defines a set of common components which are independent of any 
+The KDE HIG defines a set of common components which are independent of any
 :doc:`device type <devicetypes>`.
 
 .. figure:: /img/Desktop_UX.png
    :scale: 25%
    :alt: Example showing the common components on a Desktop device type
 
-   
+
 - **Workspace**: The top-level container of the whole user interface. Often
   called "desktop", "home screen", or "shell", it shows the wallpaper and
   allows users to add widgets, app launchers, files or folders.
@@ -104,14 +104,14 @@ The KDE HIG defines a set of common components which are independent of any
 
 - **Application Content**: The actual content of an application. This depends
   on the application itself, but conformance to the KDE HIG should make it
-  easier to allow :doc:`convergence <convergence>` for this  component. This 
-  part of the application can also contain contextually-appropriate tools 
+  easier to allow :doc:`convergence <convergence>` for this  component. This
+  part of the application can also contain contextually-appropriate tools
   that operate directly on the active or selected content.
 
 .. figure:: /img/Mobile-UX.png
    :scale: 50%
    :alt: Example showing the common components on a Mobile device type
-   
+
 Theme
 -----
 There are three different kinds of themes influencing the the look-and-feel of KDE applications and the Plasma workspace.

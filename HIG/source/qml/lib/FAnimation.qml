@@ -17,20 +17,20 @@
  *   51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  */
 
-import QtQuick 2.6
-import QtQuick.Controls 2.2
-import QtQuick.Layouts 1.2
-import org.kde.kirigami 2.4 as Kirigami
-import "../../models/" as Models
-import "../../addr/" as Addr
-import "../../lib/annotate.js" as A
+import QtQuick 2.2
 
-Rectangle {
-    width: 320
-    height: 600
-    id: root
-
-    Addr.Addressbook {
-        id: addrbook
+Item {
+    property variant actions: {}    
+    
+    FTimer {
+        running: true
+        // 1 tick per frame, 
+        // Since we are recording with exact 60 frames/sec
+        // 60 ticks are 1 sec
+        onTick: function(tick) {
+            if (actions[tick]) {
+                actions[tick]();
+            }
+        }
     }
 }

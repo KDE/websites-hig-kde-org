@@ -38,6 +38,12 @@ in a toolbar. For actions which are always available, use the :doc:`Global Drawe
 Behavior
 ~~~~~~~~
 
+.. raw:: html
+    
+    <video src="https://cdn.kde.org/hig/video/20200122/ShowContentDrawer.webm" 
+    loop="true" playsinline="true" width="320" controls="true" 
+    onended="this.play()" class="border"></video>
+    
 -  The Context Drawer is opened by swiping in from the left or right
    edge of the screen (depending on a system-wide setting) and closed by
    swiping in the other direction or tapping outside of it.
