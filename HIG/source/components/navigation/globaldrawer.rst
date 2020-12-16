@@ -94,7 +94,7 @@ collapsed icons-only state.
 
 .. raw:: html
 
-   <video src="https://cdn.kde.org/hig/video/20181031-1/Globaldrawer4.webm" 
+   <video src="https://cdn.kde.org/hig/video/20201214/Globaldrawer4.webm" 
    loop="true" playsinline="true" width="640" controls="true" 
    onended="this.play()" class="border"></video>
 
