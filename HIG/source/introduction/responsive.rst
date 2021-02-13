@@ -45,7 +45,7 @@ responsive. Often it is more important to retain the size for usability,
 familiarity and alignment and aim for :doc:`optimized convergence 
 <convergence>` 
 by selecting different 
-:doc:`navigation <../patterns/navigation/index>`, 
+:doc:`navigation <../patterns/navigation>`, 
 :doc:`command </patterns/command/index>` and 
 :doc:`content </patterns/content/index>` patterns for different formfactors.
 

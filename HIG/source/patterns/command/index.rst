@@ -19,7 +19,7 @@ based on user input. Commands that perform similar functions may be
 grouped together. The collection of commands and command groups make up
 the command structure of the application.
 
-Command patterns can be combined with :doc:`navigation patterns </patterns/navigation/index>` and
+Command patterns can be combined with :doc:`navigation patterns </patterns/navigation>` and
 :doc:`content patterns </patterns/content/index>` to design the complete layout for your application.
 
 Guidelines

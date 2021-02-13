@@ -16,7 +16,7 @@ KDE Human Interface Guidelines
    components/index
    patterns/command/index
    patterns/content/index
-   patterns/navigation/index
+   patterns/navigation
    accessibility/index
    platform/index
    resources/about

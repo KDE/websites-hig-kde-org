@@ -52,8 +52,7 @@ How to Use
 Desktop-Specific
 ~~~~~~~~~~~~~~~~
 
-If your application is using :doc:`column-based navigation
-</patterns/navigation/column>`:
+If your application is using column-based navigation:
 
 -  If there is a global Primary Action, associate it with the first
    column
